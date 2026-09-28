@@ -123,7 +123,7 @@ The project focuses on:
 
 ## 🖼️ Project Preview
 
-![AmCart Preview](./static/images/amcart-preview.png)
+<img src="static/images/amcart-preview.png" alt="AmCart Preview" width="800">
 
 ## 👨‍💻 Developer
 
