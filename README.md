@@ -119,3 +119,11 @@ The project focuses on:
 - Product ratings and reviews
 - Improved personalized recommendations
 - Cloud deployment
+
+## 👨‍💻 Developer
+
+**Devansh Goyal**
+
+B.Tech CSE (Artificial Intelligence & Machine Learning)
+
+GitHub: [Devanshgoyal-os](https://github.com/Devanshgoyal-os)
