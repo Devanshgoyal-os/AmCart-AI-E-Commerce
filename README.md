@@ -122,6 +122,10 @@ The project focuses on:
 
 ## 👨‍💻 Developer
 
+## 🖼️ Project Preview
+
+![AmCart Banner](static/images/banner1.png)
+
 **Devansh Goyal**
 
 B.Tech CSE (Artificial Intelligence & Machine Learning)
