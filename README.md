@@ -90,3 +90,11 @@ AmCart-AI-E-Commerce/
 
 ```bash
 git clone https://github.com/Devanshgoyal-os/AmCart-AI-E-Commerce.git
+
+cd AmCart-AI-E-Commerce
+
+pip install -r requirements.txt
+
+python app.py
+
+http://127.0.0.1:5000
