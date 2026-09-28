@@ -108,3 +108,14 @@ The project focuses on:
 - Implementing product search and cart functionality
 - Integrating an AI-based recommendation system
 - Applying machine learning concepts to a practical application
+
+## 🔮 Future Improvements
+
+- User login and registration
+- Database integration
+- Online payment gateway
+- Order history
+- Admin dashboard
+- Product ratings and reviews
+- Improved personalized recommendations
+- Cloud deployment
