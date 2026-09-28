@@ -120,9 +120,9 @@ The project focuses on:
 - Improved personalized recommendations
 - Cloud deployment
 
-## 🖼️ Project Preview
+# AmCart
 
-![AmCart Preview](https://raw.githubusercontent.com/Devanshgoyal-os/AmCart-AI-E-Commerce/main/static/images/amcart-preview.png)
+<img src="https://raw.githubusercontent.com/Devanshgoyal-os/AmCart-AI-E-Commerce/main/static/images/amcart-preview.png">
 
 ## 👨‍💻 Developer
 
