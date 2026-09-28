@@ -124,7 +124,7 @@ The project focuses on:
 
 ## 🖼️ Project Preview
 
-![AmCart Preview](./static/images/amcart-preview.png)
+![AmCart Preview](/static/images/amcart-preview.png)
 
 **Devansh Goyal**
 
