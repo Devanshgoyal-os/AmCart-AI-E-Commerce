@@ -98,3 +98,13 @@ pip install -r requirements.txt
 python app.py
 
 http://127.0.0.1:5000
+
+## 🎯 Project Objective
+
+The main objective of AmCart is to develop a simple e-commerce platform that combines web development with machine learning.
+
+The project focuses on:
+- Building a functional shopping website
+- Implementing product search and cart functionality
+- Integrating an AI-based recommendation system
+- Applying machine learning concepts to a practical application
