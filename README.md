@@ -5,6 +5,7 @@ AmCart is a web-based e-commerce application built using Python, Flask, HTML, CS
 It provides product browsing, product search, shopping cart functionality and an AI-based product recommendation system.
 
 ## 🚀 Features
+
 - 🛍️ Browse products
 - 🔎 Search products
 - 🛒 Add products to cart
@@ -67,7 +68,8 @@ AmCart-AI-E-Commerce/
 │   ├── images/
 │   │   ├── banner1.png
 │   │   ├── banner2.png
-│   │   └── banner3.png
+│   │   ├── banner3.png
+│   │   └── amcart-preview.png
 │   └── products/
 │       ├── dell-laptop.jpg
 │       ├── hp-laptop.jpg
@@ -83,6 +85,7 @@ AmCart-AI-E-Commerce/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 ## ⚙️ Installation & Run
 
@@ -90,24 +93,31 @@ AmCart-AI-E-Commerce/
 
 ```bash
 git clone https://github.com/Devanshgoyal-os/AmCart-AI-E-Commerce.git
-
 cd AmCart-AI-E-Commerce
-
 pip install -r requirements.txt
-
 python app.py
+```
 
+Open in your browser:
+
+```text
 http://127.0.0.1:5000
+```
 
 ## 🎯 Project Objective
 
 The main objective of AmCart is to develop a simple e-commerce platform that combines web development with machine learning.
 
 The project focuses on:
+
 - Building a functional shopping website
 - Implementing product search and cart functionality
 - Integrating an AI-based recommendation system
 - Applying machine learning concepts to a practical application
+
+## 🖼️ Project Preview
+
+<img src="https://raw.githubusercontent.com/Devanshgoyal-os/AmCart-AI-E-Commerce/main/static/images/amcart-preview.png" alt="AmCart Preview" width="800">
 
 ## 🔮 Future Improvements
 
@@ -120,14 +130,12 @@ The project focuses on:
 - Improved personalized recommendations
 - Cloud deployment
 
-# AmCart
-
-<img src="https://raw.githubusercontent.com/Devanshgoyal-os/AmCart-AI-E-Commerce/main/static/images/amcart-preview.png">
-
 ## 👨‍💻 Developer
 
 **Devansh Goyal**
 
 B.Tech CSE (Artificial Intelligence & Machine Learning)
+
+GitHub: [Devanshgoyal-os](https://github.com/Devanshgoyal-os)
 
 GitHub: [Devanshgoyal-os](https://github.com/Devanshgoyal-os)
