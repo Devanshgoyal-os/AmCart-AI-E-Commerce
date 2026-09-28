@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ product.name }} - AmCart</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🛒 AmCart
+        </div>
+
+        <div class="search-box">
+
+            <input type="text"
+                   placeholder="Search products..."
+                   id="searchInput">
+
+            <button onclick="searchProducts()">
+                Search
+            </button>
+
+        </div>
+
+        <div class="cart">
+            🛍️ Cart
+            <span id="cartCount">0</span>
+        </div>
+
+    </nav>
+
+
+    <!-- PRODUCT DETAILS -->
+
+    <section class="product-details">
+
+        <div class="product-image">
+
+            <img
+                src="{{ url_for('static', filename='products/' + product.image) }}"
+                alt="{{ product.name }}"
+                onerror="this.src='https://via.placeholder.com/400x350?text=Product'">
+
+        </div>
+
+
+        <div class="product-information">
+
+            <h1>{{ product.name }}</h1>
+
+            <p class="product-category">
+                Category: {{ product.category }}
+            </p>
+
+            <h2 class="product-price">
+                ₹{{ product.price }}
+            </h2>
+
+            <p class="product-description">
+                {{ product.description }}
+            </p>
+
+            <button
+                class="cart-btn detail-cart"
+                onclick="addToCart('{{ product.name }}')">
+
+                🛒 Add to Cart
+
+            </button>
+
+            <a href="/" class="back-btn">
+                ← Back to Products
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI RECOMMENDATIONS -->
+
+    <section class="ai-section">
+
+        <h2>🤖 AI Recommended Products</h2>
+
+        <p>
+            Products recommended by our AI based on similarity.
+        </p>
+
+        <div
+            id="recommendations"
+            class="product-container">
+
+            <p>Loading recommendations...</p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <h2>AmCart</h2>
+
+        <p>
+            AI-Based E-Commerce Website
+        </p>
+
+        <p>
+            © 2026 AmCart. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- PRODUCT ID FOR JAVASCRIPT -->
+
+    <script>
+
+        const currentProductId = Number("{{ product.id }}");
+
+    </script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

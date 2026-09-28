@@ -1,0 +1,11 @@
+id,name,category,price,image,description
+1,HP Laptop,Laptops,55000,hp-laptop.jpg,Powerful laptop for students and professionals
+2,Dell Laptop,Laptops,60000,dell-laptop.jpg,High performance laptop for work and study
+3,Lenovo Laptop,Laptops,52000,lenovo-laptop.jpg,Affordable laptop for everyday use
+4,iPhone 15,Mobile,65000,iphone15.jpg,Apple smartphone with powerful performance
+5,Samsung Galaxy,Mobile,45000,samsung.jpg,Modern Android smartphone with excellent camera
+6,OnePlus Phone,Mobile,35000,oneplus.jpg,Fast smartphone with smooth performance
+7,Wireless Headphones,Audio,2500,headphones.jpg,Comfortable wireless headphones
+8,Bluetooth Speaker,Audio,1800,speaker.jpg,Portable Bluetooth speaker
+9,Gaming Mouse,Accessories,1200,mouse.jpg,RGB gaming mouse with precise control
+10,Mechanical Keyboard,Accessories,3000,keyboard.jpg,Mechanical keyboard for gaming and work

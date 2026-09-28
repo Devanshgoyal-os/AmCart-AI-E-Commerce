@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - AmCart</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🛒 AmCart
+        </div>
+
+        <a href="/" class="back-btn">
+            ← Continue Shopping
+        </a>
+
+    </nav>
+
+
+    <section class="checkout-container">
+
+        <h1>🛒 Checkout</h1>
+
+        <div class="checkout-box">
+
+            <h2>Delivery Details</h2>
+
+            <form onsubmit="placeOrder(event)">
+
+                <label>Full Name</label>
+                <input type="text"
+                       id="customerName"
+                       placeholder="Enter your name"
+                       required>
+
+                <label>Email</label>
+                <input type="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <label>Phone Number</label>
+                <input type="tel"
+                       placeholder="Enter phone number"
+                       required>
+
+                <label>Address</label>
+                <textarea
+                    placeholder="Enter your complete address"
+                    required></textarea>
+
+                <label>Payment Method</label>
+
+                <select required>
+                    <option value="">Select Payment Method</option>
+                    <option>Cash on Delivery</option>
+                    <option>UPI</option>
+                    <option>Credit / Debit Card</option>
+                </select>
+
+                <button type="submit" class="place-order-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <script src="{{ url_for('static',
+              filename='js/script.js') }}">
+    </script>
+
+</body>
+
+</html>

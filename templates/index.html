@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AmCart - AI Shopping</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛒 AmCart
+        </div>
+
+        <div class="search-box">
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search products...">
+
+            <button onclick="searchProducts()">
+                Search
+            </button>
+        </div>
+
+        <div class="cart" onclick="toggleCart()">
+    🛍️ Cart
+    <span id="cartCount">0</span>
+</div>
+
+    </nav>
+
+
+    <!-- IMAGE SLIDER -->
+<section class="slider">
+
+    <div class="slide active">
+        <img src="{{ url_for('static', filename='images/banner1.png') }}"
+             alt="AmCart Electronics">
+    </div>
+
+    <div class="slide">
+        <img src="{{ url_for('static', filename='images/banner2.png') }}"
+             alt="AmCart Laptops">
+    </div>
+
+    <div class="slide">
+        <img src="{{ url_for('static', filename='images/banner3.png') }}"
+             alt="AmCart Technology">
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+
+</section>
+    <!-- SLIDER HEADING -->
+    <section class="slider-heading">
+        <h2>Featured Products</h2>
+        <p>Discover products with AmCart</p>
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <button onclick="filterCategory('all')">
+                All
+            </button>
+
+            <button onclick="filterCategory('Laptops')">
+                💻 Laptops
+            </button>
+
+            <button onclick="filterCategory('Mobile')">
+                📱 Mobile
+            </button>
+
+            <button onclick="filterCategory('Audio')">
+                🎧 Audio
+            </button>
+
+            <button onclick="filterCategory('Accessories')">
+                ⌨️ Accessories
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section">
+
+        <h2>Our Products</h2>
+
+        <div class="product-container" id="productContainer">
+
+            {% for product in products %}
+
+            <div class="product-card"
+                 data-name="{{ product.name }}"
+                 data-category="{{ product.category }}">
+
+                <img
+                    src="{{ url_for('static', filename='products/' + product.image) }}"
+                    alt="{{ product.name }}"
+                    onerror="this.src='https://via.placeholder.com/250x200?text=Product'">
+
+                <div class="product-info">
+
+                    <h3>{{ product.name }}</h3>
+
+                    <p class="category">
+                        {{ product.category }}
+                    </p>
+
+                    <p class="description">
+                        {{ product.description }}
+                    </p>
+
+                    <h3 class="price">
+                        ₹{{ product.price }}
+                    </h3>
+
+                    <div class="buttons">
+
+                     <a href="/product/{{ product.id }}"
+   class="view-btn"
+   data-product-id="{{ product.id }}">
+    View Details
+</a>
+
+                        <button
+    class="cart-btn"
+    onclick="addToCart('{{ product.name }}', '{{ product.price }}')">
+    Add to Cart
+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+
+    <!-- AI RECOMMENDATION -->
+    <section class="recommendation-section">
+
+    <h2>🤖 AI Recommended Products</h2>
+
+    <p>
+        Recommendations powered by TF-IDF and Cosine Similarity
+    </p>
+
+    <div id="recommendations" class="product-container">
+        <p>🤖 AI is preparing recommendations...</p>
+    </div>
+
+</section>
+   
+<!-- CART SECTION -->
+<div id="cartSection" class="cart-section">
+
+    <div class="cart-header">
+        <h2>🛒 Your Cart</h2>
+        <button onclick="toggleCart()">✕</button>
+    </div>
+
+    <div id="cartItems">
+        <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-total">
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+        <button class="checkout-btn" onclick="checkout()">
+            Proceed to Checkout
+        </button>
+    </div>
+
+</div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>AmCart</h2>
+
+        <p>
+            AI-Based E-Commerce Website
+        </p>
+
+        <p>
+            © 2026 AmCart. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
